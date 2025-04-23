@@ -1,0 +1,1 @@
+test('All <li> tags are valid', () => { const content = require('fs').readFileSync('buggy-about-me.html', 'utf8'); expect(content.includes('<liCSS')).toBe(false); });

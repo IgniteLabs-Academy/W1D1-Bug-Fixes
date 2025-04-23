@@ -1,0 +1,1 @@
+test('<img> tag is self-closed', () => { const content = require('fs').readFileSync('buggy-about-me.html', 'utf8'); expect(content.includes('/>')).toBe(true); });

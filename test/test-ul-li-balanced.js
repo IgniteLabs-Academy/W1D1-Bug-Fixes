@@ -1,0 +1,1 @@
+test('All <li> tags are closed', () => { const content = require('fs').readFileSync('buggy-about-me.html', 'utf8'); const open = (content.match(/<li>/g) || []).length; const close = (content.match(/<\/li>/g) || []).length; expect(open).toBe(close); });

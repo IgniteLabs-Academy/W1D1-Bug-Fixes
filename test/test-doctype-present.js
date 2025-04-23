@@ -1,0 +1,1 @@
+test('DOCTYPE is present', () => { const content = require('fs').readFileSync('buggy-about-me.html', 'utf8'); expect(content.includes('<!DOCTYPE html>')).toBe(true); });

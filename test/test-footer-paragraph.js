@@ -1,0 +1,1 @@
+test('<footer> contains paragraph', () => { const content = require('fs').readFileSync('buggy-about-me.html', 'utf8'); expect(content.match(/<footer>\s*<p>.*?<\/p>\s*<\/footer>/)).not.toBeNull(); });

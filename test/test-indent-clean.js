@@ -1,0 +1,1 @@
+test('Basic indentation present (2 spaces or more)', () => { const content = require('fs').readFileSync('buggy-about-me.html', 'utf8'); expect(content.includes('  ')).toBe(true); });

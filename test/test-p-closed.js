@@ -1,0 +1,1 @@
+test('<p> tag is closed', () => { const content = require('fs').readFileSync('buggy-about-me.html', 'utf8'); expect(content.match(/<p.*?>[\s\S]*?<\/p>/)).not.toBeNull(); });

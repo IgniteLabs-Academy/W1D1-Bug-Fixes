@@ -1,0 +1,1 @@
+test('Meta charset is included', () => { const content = require('fs').readFileSync('buggy-about-me.html', 'utf8'); expect(content.includes('<meta charset="UTF-8">')).toBe(true); });

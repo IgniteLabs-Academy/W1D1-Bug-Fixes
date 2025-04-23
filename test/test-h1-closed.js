@@ -1,0 +1,1 @@
+test('<h1> tag is properly closed', () => { const content = require('fs').readFileSync('buggy-about-me.html', 'utf8'); expect(content.match(/<h1.*?>.*?<\/h1>/)).not.toBeNull(); });
